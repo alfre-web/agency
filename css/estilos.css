@@ -1,0 +1,641 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 16px;
+}
+/* header */
+header{
+    width: 100%;
+    height: 650px;
+    background-image: url("../imgs/fondo3.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    color: #fff;
+    text-align: center;
+}
+nav{
+    width: 100%;
+    position: fixed;
+    color: #fff;
+    box-shadow: 0 0 2px 0 rgba(0,0,0,.5)
+}
+.hidden{
+    overflow: hidden;
+}
+.nav1{
+    height: 70px;
+    background: transparent;
+    color: #fff;
+}
+.nav2{
+    height: 70px;
+    background: #222222;
+    color: #fff;
+}
+.nav1 .enlaces a:hover{
+    border-bottom: 4px solid #f39422;
+    transition: 0.6s;
+}
+.nav2 .enlaces a:hover{
+    border-bottom: 4px solid #f39422;
+    transition: 0.6s;
+}
+.hambur{
+    color: #f39422;
+}
+.icono{
+    font-size: 24px;
+    display: none;
+    padding: 23.5px 20px;
+  }
+nav .enlaces a{
+    display: inline-block;
+    padding: 5px 0px;
+    text-decoration: none;
+    margin-right: 17px;
+    font-weight: 300;
+    color: inherit;
+    border-bottom: 5px solid transparent;
+}
+.contenedor-nav{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    height: inherit;
+    overflow: hidden;
+}
+header .textos{
+   height: 100%;
+   width: 100%;
+   justify-content: center;
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   overflow: hidden;
+  
+}
+header .textos .titulo-header{
+    font-weight: 300;
+    font-size: 70px;
+    margin-bottom: -20px;
+}
+header .textos .subtitulo{
+    font-size: 42px;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+header .marca {
+    font-size: 18px;
+}
+header .marca h3{
+    color: #f39422
+}
+header .marca p{
+   margin-top: -8px;
+}
+header .marc{
+    color: #f39422;
+}
+header .marc2{
+    color: #f39422;
+}
+
+header .boton{
+    display: inline-block;
+    padding: 6px;
+    width: 120px;
+    border: 1px solid #fff;
+    font-size: 19px;
+    text-align: center;
+    color: #fff;
+    border-radius: 16px;
+    text-decoration: none;
+    
+}
+.boton:hover{
+    background: #f39422;
+    color: #fff;
+}
+/* efecto skew */
+.sesgoabajo{
+    z-index: 10;    
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-width: 0 0 18vh 100vw;
+    border-style: solid;
+    border-color: transparent transparent #fff transparent; 
+}
+.sesgoarriba{
+    z-index: 10;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-width: 18vh 100vw 0 0;
+    border-style: solid;
+    border-color: #fff transparent transparent transparent; 
+}
+/* contenedor */
+.contenedor{
+    margin: auto;
+    width: 90%;
+    max-width: 1000px;
+    text-align: center;
+    overflow: hidden;
+    padding: 60px 0;
+
+}
+/* acerca de */
+.parrafo{
+    margin-bottom: 12px;
+    text-align: justify;
+    font-weight: 300;
+    line-height: 24px;
+}
+.acerca-de .boton2{
+    margin-top: 12px;
+    display: inline-block;
+    padding: 6px;
+    font-weight: 300;
+    width: 120px;
+    border: 1px solid #000;
+    font-size: 19px;
+    text-align: center;
+    color: #000;
+    border-radius: 16px;
+    text-decoration: none;
+}
+/* servicios */
+.team-ser{
+    background: url("../imgs/fondo1.jpg");
+    height: auto;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+.team-ser .servicio{
+    color: #fff;
+    display: flex;
+    margin: auto;
+    justify-content: space-around;
+}
+.team-ser .linea{
+    background: #f39422;
+    height: 5px;
+    width: 80px;
+    margin: auto;
+    margin-top: -15px;
+    margin-bottom: 45px;
+}
+.box-ser{
+    width: 30%;
+    margin-bottom: 10px;
+
+}
+.box-ser img{
+    width: 150px;
+    object-fit: cover;
+}
+.box-ser h4{
+    font-size: 20px;
+}
+.team-ser .titulo-ser{
+    color: #f39422;
+    margin-bottom: 20px;
+    font-size: 45px;
+    font-weight: 600;
+}
+/* equipo */
+.caja-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.sobre-nosotros{
+    text-align: center;
+    font-size: 50px;
+    /* margin-bottom: 10px; */
+    font-weight: 600;
+    height: auto;
+}
+.slogan{
+    font-size: 25px;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.miembros .contenedor .comillas{
+    color: #1089ff;
+    font-size: 45px;
+}
+.cards{
+    height: 350px;
+    box-shadow: 6px 6px 6px 6px rgba(0,0,0,.5);
+    width: 30%;
+    overflow: hidden;
+}
+.cards img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.people{
+    height: 80%;
+}
+/* galeria */
+
+.galeria{
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    display: flex;
+    
+}
+.imagenes{
+    width: 20%;
+    height: 350px;
+    overflow: hidden;
+    /* position: relative; */
+}
+.imagenes img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+.encima{
+    /* position: absolute; */
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(246, 184, 59, 0.938)
+}
+.encima h2{
+    /* position: relative; */
+    top: 45%;
+    text-align: center;
+    color: #fff;
+}
+
+.encima div{
+    /* position: relative; */
+    display: block;
+    top: 45%;
+    width: 40px;
+    height: 4px;
+    margin: auto;
+    background: #fff;
+}
+/* clinetes */
+.fondo .clientes{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
+.clientes .cliente{
+    margin-bottom: 10px;
+    width: 30%;
+    padding: 0 10px;
+    
+}
+.clientes .caja-client{
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+}
+.clientes .caja-client img{
+    width: 120px;
+}
+.clientes .texto-client h4{
+    text-align: center;
+}
+.clientes .texto-client p{
+    text-align: justify;
+}
+
+.fondo .contenedor .titulos-patrocinios{
+    font-size: 55px;
+}
+.fondo .contenedor .subtitulo-patrocinios{
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+/* oraciones */
+.oraciones{
+    background: url("../imgs/fondo2.jpg");
+    height: auto;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    
+    
+}
+.sesgoabajo-unico{
+    z-index: 10;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-width: 0 0 18vh 100vw;
+    border-style: solid;
+    border-color: transparent transparent #fff transparent;
+}
+.oraciones .oracion-texto{
+    display: flex;
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.oraciones .oracion-texto .caja-ora{
+    margin-top: 20px;
+}
+.oraciones .oracion-texto .caja-ora p{
+    font-size: 20px;
+}
+.oraciones .oracion-texto h2{
+    font-size: 55px;
+}
+/* contacto */
+.contacto{
+    background: #fff;
+    height: auto;
+}
+.contacto .titulo-contacto{
+    text-align: center;
+    font-size: 45px;
+}
+.contacto .subtitulo-contacto{
+    font-size: 18px;
+
+}
+.contacto form{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
+}
+.contacto .contact{
+    margin-top: 10px;
+}
+.contacto input[type="text"], input[type="email"]{
+    display: inline-block;
+    width: 48%;
+    padding: 13px;
+    border: 2px solid #000;
+    margin-bottom: 10px;
+    color: #000;
+    text-transform: uppercase;
+
+}
+/* .contacto input[type="text"]:focus, input[type="email"]:focus{
+    border-bottom: 5px solid #f39422;
+} */
+textarea{
+    text-transform: uppercase;
+    display: block;
+    width: 100%;
+    padding: 13px;
+    border: 2px solid #000;
+}
+input[type="submit"]{
+    text-transform: uppercase;
+    margin-top: 10px;
+    display: inline-block;
+    padding: 12px;
+    border: 2px solid #000;
+    width: 96px;
+    background: #fff;
+}
+/* footer */
+footer{
+    background: #000;
+    padding: 50px;
+}
+footer .footer-menu{
+    max-width: 1000px;
+    width: 100%;
+    display: flex;
+    margin:  0 auto 25px;
+    justify-content: space-between;
+}
+footer .footer-menu .titlef{
+    margin-bottom: 10px;
+    color: #adadad;
+}
+
+footer .footer-menu ul li a{
+    display: block;
+    margin-bottom: 6px;
+    color: #fff;
+}
+
+footer .footer-menu ul li, a{
+    list-style: none;
+    text-decoration: none;
+}
+footer .footer-menu ul li a:hover{
+    text-decoration: underline;
+}
+footer .social-media{
+    text-align: center;
+}
+footer .social-media p{
+    color: #adadad
+}
+footer .social-media ul{
+   display: flex;
+   justify-content: center;
+   margin-bottom: 15px;
+   /* margin-right: 125px; */
+}
+footer .social-media ul li, a{
+    list-style: none;
+    text-decoration: none;
+}
+
+footer .social-media ul li a{
+    display: block;
+    margin: 0 5px;
+    color: #fff;
+    font-size: 25px;
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    color: #222222;
+    line-height: 50px;
+    border-radius: 5px;
+}
+footer .social-media ul li a:hover{
+    color: #fff;
+}
+footer .social-media ul li a.facebook:hover{
+    background: #3b5998;
+}
+footer .social-media ul li a.instagram:hover{
+    background: #c32aa3;
+}
+footer .social-media ul li a.github:hover{
+    background: #000;
+}
+.fas{
+    padding: 4px; 
+}
+
+@media screen and (max-width: 700px){
+    header .textos .titulo-header{
+        font-weight: 300;
+        font-size: 70px;
+        margin-bottom: -20px;
+    }
+    header .textos .subtitulo{
+        font-size: 42px;
+        font-weight: 300;
+        margin-bottom: 10px;
+    }
+    .team-ser .servicio{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .cards{
+        margin-top: 15px; 
+        width: 40%;
+    }
+    .clientes{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .clientes .cliente{
+        width: 100%;
+    }
+    .icono{
+        display: block;
+        cursor: pointer;
+    }
+    .enlaces{
+        position: fixed;
+        top: 70px;
+        background: #000;
+        right: 0px;
+        height: 100%;
+        transition: 1s;
+        width: 0;
+        overflow: hidden;
+        color: #fff;
+
+    }
+    .enlaces a{
+        display: block;
+        width: 100%;
+        height: 45px;
+        padding: 20px;
+        text-align: center;
+        background: #000;
+        color: #fff;
+    }
+    .nav1 .enlaces a:hover{
+        border-left: 6px solid #f39422;
+        border-bottom: 1px solid #000;
+        transition: none;
+    }
+    .nav2 .enlaces a:hover{
+        border-left: 6px solid #f39422;
+        border-bottom: 1px solid #000;
+        transition: none;
+    }
+
+    footer .footer-menu{
+        flex-direction: column;
+        width: 100%;
+        margin: 0 auto 25px;
+    }
+
+}
+@media screen and (max-width: 600px){
+    header .textos .titulo-header{
+        font-weight: 300;
+        font-size: 60px;
+        margin-bottom: -20px;
+    }
+    header .textos .subtitulo{
+        font-size: 32px;
+        font-weight: 300;
+        margin-bottom: 10px;
+    }
+    .oraciones .oracion-texto h2{
+        /* margin-top: 7%; */
+        font-size: 35px;
+    }
+    .none{
+        display: none;
+    }
+    .imagenes{
+        flex-grow: 1;
+    }
+    
+}
+@media screen and (max-width: 515px){
+    header .textos .titulo-header{
+        font-weight: 300;
+        font-size: 55px;
+        
+    }
+    header .textos .subtitulo{
+        font-size: 32px;
+        font-weight: 300;
+    }
+    .marc2{
+        display: block;
+    }
+    .box-ser{
+        width: 70%;
+        margin-bottom: 10px;
+    
+    }
+    .cards{
+        margin-top: 15px; 
+        width: 80%;
+    }
+    .cliente{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 339px){
+    .encima .titulo-encima{
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 300px){
+    .acerca-de .sobre-nosotros{
+        font-size: 40px;
+    }
+    .team-ser .titulo-ser{
+        font-size: 40px;
+    }
+    .miembros .sobre-nosotros{
+        font-size: 40px;
+    }
+    .fondo .contenedor .titulos-patrocinios{
+        font-size: 40px;
+    }
+    .contacto .titulo-contacto{
+        text-align: center;
+        font-size: 40px;
+    }
+    .oraciones .oracion-texto h2{
+        font-size: 30px;
+    }
+}
